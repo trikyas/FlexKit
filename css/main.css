@@ -47,3 +47,7 @@ nav
     -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg);
 }
+.content
+{
+    padding: 2.5vh;
+}

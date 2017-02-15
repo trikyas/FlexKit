@@ -27,6 +27,10 @@
 
         <!-- HTML5shiv and selectivizr.js IE support of HTML5 elements and CSS3 pseudo-classes, attribute selectors -->
         <!--[if lte IE 8]><script src="js/system/ie-pack.min.js"></script><![endif]-->
+
+        <!-- include jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
     </head>
     <body>
 
@@ -36,24 +40,44 @@
             <header role="banner">
                 <a class="logo" href="#" title="Trikyas.com">
                     <!--img src="images/logo.png" alt="" width="75" height="75"-->
-                    <span>Trikyas.com</span>
-                </a>
-            </header>
+                    <span class="logo-main scroll-effect" data-animate="jello">Trikyas.com</span>
+                </a><!--<< END LOGO-LINK -->
 
-            <!-- Main Menu -->
-            <nav role="navigation">
-              <!-- _POSITION BUTTON MENU_ = left, right -->
-              <span class="menu-btn _POSITION BUTTON MENU_" data-menu-position="right">Menu</span>
-            </nav>
+                <!-- Main Menu -->
+                <nav role="navigation">
+                  <!-- _POSITION BUTTON MENU_ = left, right -->
+                  <a class="menu-btn right menu-main" data-menu-position="right">Menu</a>
+                  <a class="menu-btn right menu-main" data-menu-position="right">Menu</a>
+                  <a class="menu-btn right menu-main" data-menu-position="right">About</a>
+                </nav>
+
+
+            </header><!--<< END Header -->
+
 
             <!-- Content box -->
             <section role="main">
-                _SAMPLE CONTENT_
+              <ul class="carousel" data-vertical="true">
+                <li>
+                  <img src="images/devs1.jpg" width="500">
+                </li>
+                <li>
+                  <img src="images/dev2.jpg" width="500">
+                </li>
+                <li>
+                  <img src="images/devs1.jpg" width="500">
+                </li>
+                <li>
+                  <img src="images/dev2.jpg" width="500">
+                </li>
+              </ul>
+
             </section>
 
             <!-- Right box -->
             <aside role="complementary">
                 _SAMPLE ASIDE_
+
             </aside>
 
             <!-- Footer -->
@@ -65,5 +89,7 @@
         <!-- SCRIPTS ZONE -->
         <script src="js/system/flexkit.min.js"></script>
         <script src="js/scripts.min.js"></script>
+
+        <script src="bower_components/build/jquery.cycle2.min.js"></script>
     </body>
 </html>

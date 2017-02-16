@@ -76,5 +76,8 @@ nav
 }
 .carousel
 {
-    margin-left: -15px;
+    width: auto;
+    padding-left: 0;
+
+    border-bottom: 3px solid #8ada8c;
 }

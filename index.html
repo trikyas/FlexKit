@@ -7,7 +7,7 @@
         <meta name="keywords" content="SEOTOASTER THEME">
         <meta name="description" content="FlexKit Theme built by Chad Trikyas Mooney">
         <meta name="author" content="Chad Trikyas Mooney">
-        <title>Trikyas.com | FlexKit Theme</title>
+        <title>Trikyas.com | ADHD</title>
 
         <!-- Mobile Specific Metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -24,6 +24,7 @@
         <link href="css/flexkit.css" rel="stylesheet" media="all">
         <link href="css/animation.css" rel="stylesheet" media="all">
         <link href="css/main.css" rel="stylesheet" media="all">
+        <link href="bower_components/magic/magic.css" rel="stylesheet" media="all">
 
         <!-- HTML5shiv and selectivizr.js IE support of HTML5 elements and CSS3 pseudo-classes, attribute selectors -->
         <!--[if lte IE 8]><script src="js/system/ie-pack.min.js"></script><![endif]-->
@@ -40,7 +41,7 @@
             <header role="banner">
                 <a class="logo" href="#" title="Trikyas.com">
                     <!--img src="images/logo.png" alt="" width="75" height="75"-->
-                    <span class="larger message white"><span class="icon-thumbs-up thumb-resize warning"></span>Random</span>
+                    <span class="larger message white"><span class="icon-thumbs-up thumb-resize warning"></span>ADHD</span>
                 </a><!--<< END LOGO-LINK -->
                 <!-- Main Menu -->
                   <nav role="navigation">
@@ -51,14 +52,14 @@
                   </nav>
                   <!-- Main Slider -->
                 <div class="cycle-slideshow mid respon" data-vertical="true">
-                    <img src="https://s1.postimg.org/ngz2t4i1r/proud_liz.jpg">
-                    <img src="https://s27.postimg.org/xnwamb6qr/what_liz.jpg" />
-                    <img src="https://s8.postimg.org/wglvtz2sl/chill_liz.jpg">
+                    <img class="flip" src="https://s1.postimg.org/ngz2t4i1r/proud_liz.jpg">
+                    <img class="flip" src="https://s27.postimg.org/xnwamb6qr/what_liz.jpg" />
+                    <img class="flip" src="https://s8.postimg.org/wglvtz2sl/chill_liz.jpg">
                   </div>
                   <div class="cycle-slideshow mid flipped respon" data-vertical="true">
-                      <img src="https://s1.postimg.org/ngz2t4i1r/proud_liz.jpg">
-                      <img src="https://s27.postimg.org/xnwamb6qr/what_liz.jpg" />
-                      <img src="https://s8.postimg.org/wglvtz2sl/chill_liz.jpg">
+                      <img class="flip" src="https://s1.postimg.org/ngz2t4i1r/proud_liz.jpg">
+                      <img class="flip" src="https://s27.postimg.org/xnwamb6qr/what_liz.jpg" />
+                      <img class="flip" src="https://s8.postimg.org/wglvtz2sl/chill_liz.jpg">
 
                   </div><!--<< END Main Slider -->
 
@@ -70,10 +71,9 @@
 
               <div class="panel spaced-shadow space-SM">
                   <div class="panel-content message success">
-                    <h1 class="message warning spaced-shadow animated repeat bounce">Clean</h1>
-                    <p class="spaced-shadow">
-                      Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.
-                    </p>
+                    <h1 class="message warning spaced-shadow animated repeat bounce">Calm</h1>
+                    <p class="spaced-shadow">Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.Some random stuff here.
+                  </p>
                   </div>
               </div>
               <div class="right">
@@ -181,5 +181,11 @@
         <script src="js/plugin/jquery.chosen.min.js"></script>
         <script src="js/plugin/hammer.min.js"></script>
         <script src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+        <script>
+        //set timer to 3 seconds, after that, load the magic animation and repeat forever
+        setInterval(function(){
+          $('.circle').toggleClass('magictime boingInUp');
+        }, 6000 );
+        </script>
     </body>
 </html>

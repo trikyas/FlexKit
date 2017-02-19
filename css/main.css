@@ -50,7 +50,7 @@ nav
 }
 .space-SM
 {
-    margin-top: 2.5vh;
+    margin-top: 3.5vh;
 }
 .spaced-shadow
 {
@@ -80,4 +80,24 @@ nav
     padding-left: 0;
 
     border-bottom: 3px solid #8ada8c;
+}
+footer
+{
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+back
+{
+    background-color: rgba(0,0,0,1.00);
+}
+.map
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
 }
